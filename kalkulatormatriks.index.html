@@ -1,0 +1,33 @@
+import numpy as np
+
+# 1. Deklarasi Matriks (2x3 dan 3x2)
+A = np.array([
+    [1, 2, 3],
+    [4, 5, 6]
+])
+
+B = np.array([
+    [7, 8],
+    [9, 10],
+    [11, 12]
+])
+
+# 2. Transpose Matriks
+A_transpose = A.T
+
+# 3. Penjumlahan & Pengurangan (Membutuhkan ukuran yang sama)
+C = np.array([[1, 1, 1], [2, 2, 2]])
+A_plus_C = A + C
+
+# 4. Perkalian Skalar
+A_scalar = A * 2
+
+# 5. Perkalian Matriks (Dot Product) -> (2x3) * (3x2) = (2x2)
+A_times_B = np.matmul(A, B)  # atau A @ B
+
+# Output Hasil
+print("Matriks A:\n", A)
+print("\nTranspose A:\n", A_transpose)
+print("\nPenjumlahan (A + C):\n", A_plus_C)
+print("\nPerkalian Skalar (A * 2):\n", A_scalar)
+print("\nPerkalian Matriks (A x B):\n", A_times_B)
